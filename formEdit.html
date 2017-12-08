@@ -1,0 +1,38 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">	
+	<link rel="stylesheet" type="text/css" href="./css/styleForm.css">
+	<script src="./js/form.js" type="text/javascript" charset="utf-8"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Editar Tarea</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+		<div class="form">
+			<h2>Editar Tarea</h2>
+			<form accept-charset="utf-8">
+				<label>Nombre: </label>
+				<input type="text" required pattern="[a-zA-Z]+"><br><br>
+				<label>Descripción:</label><br><br>
+				<textarea cols="25" rows="4" maxlength="200"></textarea><br><br>
+				<label>Módulo: </label>
+				<select id="select">
+					<option disabled="true" selected="true"></option>
+					<option>Diseño</option>
+					<option>Despliegue</option>
+					<option>Desarrollo Móvil</option>
+					<option>Empresas</option>
+					<option>Entorno Servidor</option>
+					<option>Entorno Cliente</option>
+				</select><br><br>
+				<label>Fecha: </label><input type="date" name="date"><br><br><hr>
+				<button type="">Editar</button>
+				<button type="">Cancelar</button>
+				<br>
+			</form>
+		</div>
+	
+</body>
+</html>
