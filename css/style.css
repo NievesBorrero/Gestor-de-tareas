@@ -6,6 +6,12 @@ body{
 	grid-template-rows: 70px 700px 80px;
 	grid-template-columns: 350px 1fr;
 	background-color: #977C97;
+	font-size: 2.5vmin;
+}
+
+
+p::first-letter{
+	text-transform: capitalize;
 }
 
 body > header{
@@ -148,6 +154,11 @@ section article div div img{
 main > section > article{
 	display:grid;
 	grid-template-columns: 30px 240px;
+	animation: aparece 3s;
+}
+
+main > section > .wraper > div:hover{
+	transform:scale(1.01);
 }
 
 main > section > .wraper > div{
@@ -156,9 +167,6 @@ main > section > .wraper > div{
 	box-shadow: 5px 10px 10px rgba(0,0,0,0.8);	
 }
 
-main > section > .wraper > div:hover{
-	transform:scale(1.01);
-}
 
 .wraper header{
 	font-size: 1.2em;
@@ -256,4 +264,9 @@ footer a {
 .form h3{
 	color: #E8E8E8;
 	font-family: serif;
+}
+
+@keyframes aparece{
+	0%{ opacity:0; }
+	100%{opacity:1;}
 }

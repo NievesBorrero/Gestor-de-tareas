@@ -1,5 +1,6 @@
 body{
 	background-color: #977C97;
+	font-size: 2.5vw;
 }
 
 
@@ -22,6 +23,10 @@ body{
 	box-shadow: 0 3px 4px #222;
 }
 
+form input, select, textarea, label{
+	max-width: 60vmin;
+}
+
 
 .form > form > input[type = "text"]{
 	width: 190px;
@@ -42,7 +47,8 @@ body{
 
 .form h2{
 	color: #E8E8E8;
-	font-family: serif;
+	font-family: serif;	
+	animation: mueve 2s;
 }
 
 .form > form > button:hover {
@@ -54,4 +60,9 @@ input:valid{
 }
 input:invalid{
 	color: #ff2222;
+}
+
+@keyframes mueve{
+	0%{	margin-left: -1000px}
+	100%{ margin-left:initial;}
 }
